@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "网页二维码生成器",
+  "version": "1.0",
+  "description": "在网页右下角显示当前页面的二维码",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 
